@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Presentations in Mardown</title>
+    <title>Presentations in Markdown</title>
     <link href="favicon.png" rel="icon" type="image/png"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style>
@@ -15,7 +15,7 @@
         font-weight: bold;
         color: #1b1e56
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; font-size: 12}
 
       .inverse h1 {
         text-align: bottom;
@@ -27,8 +27,10 @@
   <body>
     <textarea id="source">
 
-class: middle, center
-background-color: #fdde7aff
+class: center
+background-image: url("https://raw.githubusercontent.com/the-psc/fedup-markdown/main/assets/The%20PSC%20-%20Graphics%2004.png?token=GHSAT0AAAAAABS772DA2LIT4VQ3OYLYUTIIYUFDROQQ")
+background-position: center
+background-size: contain
 
 # Using Markdown
 
@@ -37,29 +39,20 @@ background-color: #fdde7aff
 Notes for the _first_ slide! These are hidden because of the ??? before it
 
 ---
-
-class: bottom, inverse
-background-image: url("https://thepsc.co.uk/images/uploads/_main/antonio_book_.jpg")
-background-position: center
-background-size: contain
-
-# Writing for Markdown
-
----
 # What is Markdown?
 
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor such as Atom or Sublime.
 
 It enables source code written with easily readable notation to be rendered in HTML. Like using 'styles' and formatting options in Excel, Word etc.
 
-It's easy to use and you may have come across it in various places in the web or used it in Slack.
+It's easy to use and you may have come across it in various places on the web or used it in Slack. Even WhatsApp uses some Markdown now.
 
 ---
 
 # Why do we use it?
 
 * It's quick and easy to get the hang of
-* You can incorporate other styles into it through templates and CSS
+* You can incorporate other styles into it through HTML and CSS
 * GitHub allows you host websites for free using static website generators - and Markdown is great for that
 * GOV.UK has made extensive use of Markup and the service Tech Docs is mostly written in Markdown
 
@@ -67,15 +60,82 @@ It's easy to use and you may have come across it in various places in the web or
 
 # How does it work?
 
+You can visit [The Markdown Guide](https://www.markdownguide.org/) to learn the ins and outs
 
+There's a basic syntax
+```js
+These are the elements outlined in John Gruber’s original design document.
+All Markdown applications support these elements.
+
+# H1 headings
+## H2 headings
+### H3 headings
+
+Bold
+**bold text**
+
+Italic
+*italicized text*
+
+Ordered List
+1. First item
+1. Second item
+1. Third item
+
+```
+---
+These are the elements outlined in John Gruber’s original design document.
+All Markdown applications support these elements.
+
+# H1 headings
+## H2 headings
+### H3 headings
+
+Bold
+**bold text**
+
+Italic
+*italicized text*
+
+Ordered List
+1. First item
+1. Second item
+1. Third item
 
 ---
+# Your turn
+
+1. Using the user needs developed yesterday we need to turn these into stories to work on
+1. Open your 'boilerplate.html' in a Text Editor (such as Atom) and open it in your browser
+1. Create user stories for presentation or have a play in a Markdown editor like [HackMD](https://hackmd.io/)
+
+### Use the following user story structure:
+
+As a <span style="background-color: #fdde7aff">space analyst</span><P>
+I need to <span style="background-color: #fdde7aff">know what upcoming launches are scheduled</span><p>
+So that <span style="background-color: #fdde7aff">I can take action with my existing satellites</span><p>
+
+???
+|As a         |I need to                    |so that                              |
+|-------------|-----------------------------|-------------------------------------|
+|Space analyst|Know about upcoming launches |I can move my satellites if necessary|
+|Operator     |Register myself for a launch |I can legally launch my satellite    |
 
 ---
+class: bottom, inverse
+background-image: url("https://thepsc.co.uk/images/uploads/_main/antonio_book_.jpg")
+background-position: center
+background-size: contain
+
+# What about this story writing?
 
 ---
+class: center
 
-# Introduction
+# Let's go to Jira!
+
+[<img src="https://raw.githubusercontent.com/the-psc/fedup-markdown/main/assets/rocket-emoji.png">](https://thepsc.atlassian.net/jira/software/c/projects/RYL/boards/11?selectedIssue=RYL-3)
+
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js" type="text/javascript">
